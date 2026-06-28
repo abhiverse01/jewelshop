@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Homepage — Landing page for the Jewellery Shop
  */
@@ -19,6 +20,11 @@ require_once __DIR__ . '/includes/header.php';
         <div class="icon">&#128141;</div>
         <h3>Premium Rings</h3>
         <p>Explore our curated selection of gold, silver, and diamond rings crafted by expert artisans.</p>
+    </div>
+    <div class="feature-card">
+        <div class="icon">&#128141;</div>
+        <h3>Bracelets</h3>
+        <p>Explore our curated selection of gold, silver, and diamond bracelets crafted by expert artisans.</p>
     </div>
     <div class="feature-card">
         <div class="icon">&#128142;</div>
