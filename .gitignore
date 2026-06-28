@@ -1,0 +1,23 @@
+# VS Code
+.vscode/
+
+# Project: uploaded product images (user-generated, not source)
+assets/images/*
+!assets/images/.gitkeep
+
+# Logs / temp
+*.log
+*.tmp
+*.cache
+.DS_Store
+Thumbs.db
+
+# Local env overrides (do not commit DB credentials)
+config/db.local.php
+.env
+.env.local
+
+# IDE
+.idea/
+*.swp
+*.swo

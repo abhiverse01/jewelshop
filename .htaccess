@@ -1,0 +1,15 @@
+# Prevent directory listing
+Options -Indexes
+
+# Deny access to config files (Apache 2.4+ syntax)
+<FilesMatch "\.(db|sql|env|log)$">
+    Require all denied
+</FilesMatch>
+
+# Legacy Apache 2.2 fallback (only consulted if mod_access_compat is loaded)
+<IfModule mod_authz_host.c>
+    <FilesMatch "\.(db|sql|env|log)$">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+</IfModule>
